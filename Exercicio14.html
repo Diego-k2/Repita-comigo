@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <script>
+
+        var arrayInterval = [];
+        var arrayFora = [];
+        var contadorInterval = 0;
+        var contadorFora = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            var num = prompt("Digite um valor:");
+
+            if(num >= 24 && num <= 42){
+                arrayInterval.push(num);
+                contadorInterval++;
+            }else {
+                arrayFora.push(num);
+                contadorFora++;
+            }
+        }
+
+        alert("Temos " + contadorInterval + ", dentro do intervalo (24 a 42) e os numeros são: " + arrayInterval);
+        alert("Temos " + contadorFora + ", fora do intervalo e os numeros são: " + arrayFora);
+
+    </script>
+
+    <title>Exercicio 14</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <script>
+
+        var continua = true;
+        var contador = 0;
+        var acumulador = 0;
+
+        while(continua){
+            var numeros = parseInt(prompt("Digite um numero"));
+            var op = prompt("Deseja continuar ? Digite S ou N").toUpperCase();
+            acumulador += numeros;
+
+            if(op == "N"){
+                continua = false;
+            } else {
+                contador++;
+            }
+        }
+
+        var media = acumulador / contador;
+
+        alert("O total de numeros foi: " + contador);
+        alert("A media foi: " + media);
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
